@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge: Build and modify an array</title>
+    <script src="variables.js" defer></script>
+    <script src="script.js" defer></script>
+    <style>
+      body div {
+        border: 2px solid black;
+        margin: 5px;
+        font-size: 40px;
+      }
+      #parent {
+        color: red;
+        border-color: red;
+      }
+      #parent > div {
+        color: black;
+        margin: 5px !important;
+      }
+      #sibbling1, #sibbling2, #newsibbling1, #newsibbling2, #beforeBegin, #afterEnd {
+        border-color: blue;
+        margin: 5px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Parent div is in <span style="color: red">Red</span> border</h4>
+    <h4>Child div is in <span style="color: black">Black</span> border</h4>
+    <h4>Sibbling div is in <span style="color: blue">Blue</span> border</h4>
+    <div id="parent">
+      <div id="child1"> Child1 </div>
+    </div>
+  </body>
+</html>
